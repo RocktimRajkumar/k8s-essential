@@ -17,8 +17,17 @@ Kubernetes is a container orchestration system
 
   
 
-**In this section, we are going to build a basic Kubernetes cluster.**
+**In this section, we are going to build a basic Kubernetes cluster.**</br>
+*Here is the scenario.*</br>
+Your team is ready to deploy the first version of their new online storefront. The team is anticipating the potential for a high degree of customer usage after deployment, and they want to make use of Kubernetes in order to enable them to respond quickly to changing needs. In order to do this, they need a new Kubernetes cluster. You have been given the task of quickly spinning up a working Kubernetes cluster with one master and two worker nodes.
 
+You will need to do the following:
+
+-   Install Docker on all three nodes.
+-   Install Kubeadm, Kubelet, and Kubectl on all three nodes.
+-   Bootstrap the cluster on the Kube master node.
+-   Join the two Kube worker nodes to the cluster.
+-   Set up cluster networking with flannel.
   
 
   
@@ -37,6 +46,11 @@ Kubernetes is a container orchestration system
 
 </p>
 
+ - `Docker` is basically a container engine which is use to create containers on top of an operating system and automates application deployment on the container.
+ - `Kubeadm` is a new tool that is part of the Kubernetes distribution as of 1.4.0 which helps you to install and set up a Kubernetes cluster.
+ - `Kubelet` is responsible for maintaining and managing a set of pods, which are composed of one or more containers, on a local system. Within a Kubernetes cluster, it act as a local agent that watches for pod specs via the Kubernetes API server.
+ - `Kubectl` is a command line tool for controlling Kubernetes clusters.
+ - `Control Plane` is a series of different services that form the Kubernetes Master structure, that allows the kubernetes master to control the cluster.
   
 
   
@@ -129,7 +143,7 @@ sudo docker version
 
   
 
-**Run these commands on all three servers.**
+**Run these commands on all three servers.**</br>
 You can work around this by using version 1.12.7-00 for kubelet, kubeadm, and kubectl.
 
 ```
