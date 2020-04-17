@@ -20,8 +20,7 @@ Kubernetes is a container orchestration system
  - `Control Plane` is a series of different services that form the Kubernetes Master structure, that allows the kubernetes master to control the cluster.
   
 ### Table of Contents
-[Description](https://github.com/RocktimRajkumar/ATS#description)
- - [Building a Cluster](#Building-a-Cluster)
+- [Building a Cluster](#Building-a-Cluster)
 - [scenario 1](./scenario1.md)
 - [Containers and Pods](./container-pods.md)
 - Clustering and Nodes
