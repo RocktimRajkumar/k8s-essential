@@ -1,49 +1,16 @@
-
-  
-
 # Kubernetes
 
-  
-
-Kubernetes is a container orchestration system
-
-  
-
-  
+Kubernetes is a container orchestration system  
 
 !['kubernetes'](./images/k8s.png)
 
-  
-
-  
-
-**In this section, we are going to build a basic Kubernetes cluster.**</br>
-*Here is the scenario.*</br>
-Your team is ready to deploy the first version of their new online storefront. The team is anticipating the potential for a high degree of customer usage after deployment, and they want to make use of Kubernetes in order to enable them to respond quickly to changing needs. In order to do this, they need a new Kubernetes cluster. You have been given the task of quickly spinning up a working Kubernetes cluster with one master and two worker nodes.
-
-You will need to do the following:
-
--   Install Docker on all three nodes.
--   Install Kubeadm, Kubelet, and Kubectl on all three nodes.
--   Bootstrap the cluster on the Kube master node.
--   Join the two Kube worker nodes to the cluster.
--   Set up cluster networking with flannel.
-  
-
-  
 
 ## Cluster Architecture
 
   
 
 <p  align=center>
-
-  
-
 <img  src='./images/cluster-architecture.png'  alt='Cluster Architecture'/>
-
-  
-
 </p>
 
  - `Docker` is basically a container engine which is use to create containers on top of an operating system and automates application deployment on the container.
@@ -52,10 +19,21 @@ You will need to do the following:
  - `Kubectl` is a command line tool for controlling Kubernetes clusters.
  - `Control Plane` is a series of different services that form the Kubernetes Master structure, that allows the kubernetes master to control the cluster.
   
+### Table of Contents
+[Description](https://github.com/RocktimRajkumar/ATS#description)
+ - [Building a Cluster](#Building-a-Cluster)
+- [scenario 1](./scenario1.md)
+- [Containers and Pods](./container-pods.md)
+- Clustering and Nodes
+- Networking in Kubernetes
+- Kubernetes Architecture and components
+- Kubernetes Deployments
+- Kubernetes Services
+- scenario 2
+- scenario 3
 
-  
-
-## Setup Server
+## Building a Cluster
+### Setup Server
 
   
 
@@ -81,7 +59,7 @@ For building the cluster we need three servers of **ubuntu distribution**.</br>
 
   
 
-## Setup Docker
+### Setup Docker
 
 <p>The first step in setting up a new cluster is to install a container runtime such as Docker.</p>
 
@@ -137,7 +115,7 @@ sudo docker version
 
   
 
-## Setup Kubeadm, Kubelet, and Kubectl
+### Setup Kubeadm, Kubelet, and Kubectl
 
 <p>Now that Docker is installed, we are ready to install the Kubernetes components.</p>
 
@@ -165,7 +143,7 @@ After installing these components, verify that Kubeadm is working by getting the
 kubeadm version
 ```
 
-## Bootstrapping the Cluster
+### Bootstrapping the Cluster
 Now we are ready to get a real Kubernetes cluster up and running!. We will bootstrap the cluster on the Kube master node. Then, we will join each of the two worker nodes to the cluster, forming an actual multi-node Kubernetes cluster.
 
 Here are the commands used in this lesson:
@@ -228,7 +206,7 @@ Here are the commands used in this lesson:
     
     **Note:**  The nodes are expected to have a STATUS of  `NotReady`  at this point.
 
-## Configuring Networking with Flannel
+### Configuring Networking with Flannel
 Once the Kubernetes cluster is set up, we still need to configure cluster networking in order to make the cluster fully functional. We will walk through the process of configuring a cluster network using Flannel.
 
 Here are the commands used in this lesson:
