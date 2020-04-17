@@ -23,7 +23,7 @@ Kubernetes is a container orchestration system
 - [Building a Cluster](#Building-a-Cluster)
 - [scenario 1](./scenario1.md)
 - [Containers and Pods](./container-pods.md)
-- Clustering and Nodes
+- [Clustering and Nodes](./cluster-nodes.md)
 - Networking in Kubernetes
 - Kubernetes Architecture and components
 - Kubernetes Deployments
