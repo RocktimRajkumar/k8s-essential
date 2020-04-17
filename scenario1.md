@@ -1,4 +1,7 @@
+## Scenario 1
+
 **Here is the scenario**
+
 Your team is ready to deploy the first version of their new online storefront. The team is anticipating the potential for a high degree of customer usage after deployment, and they want to make use of Kubernetes in order to enable them to respond quickly to changing needs. In order to do this, they need a new Kubernetes cluster. You have been given the task of quickly spinning up a working Kubernetes cluster with one master and two worker nodes.
 
 You will need to do the following:
@@ -9,9 +12,8 @@ You will need to do the following:
 -   Join the two Kube worker nodes to the cluster.
 -   Set up cluster networking with flannel.
 
-**Note:**  When installing kubeadm, kubectl, and kubelet, use version 1.12.7-00. The older versions currently have a bug that may interfere with the installation.
 
-If you need additional guidance, click the icon next to each task below for more information on how to complete each task. You can also check out the solution video for a detailed walkthrough.
+## Solution
 
 Install Docker on all three nodes.
 
