@@ -27,7 +27,7 @@ Kubernetes is a container orchestration system
 - [Networking in Kubernetes](./network.md)
 - [Kubernetes Architecture and components](./architecture-components.md)
 - [Kubernetes Deployments](./deployments.md)
-- Kubernetes Services
+- [Kubernetes Services](./services.md)
 - scenario 2
 - scenario 3
 
