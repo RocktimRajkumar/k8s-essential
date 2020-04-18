@@ -28,8 +28,11 @@ Kubernetes is a container orchestration system
 - [Kubernetes Architecture and components](./architecture-components.md)
 - [Kubernetes Deployments](./deployments.md)
 - [Kubernetes Services](./services.md)
-- scenario 2
-- scenario 3
+- [scenario 2](./scenario2.md)
+- [scenario 3](./scenario3.md)
+
+
+![Yaml](./images/yaml.jpg)
 
 ## Building a Cluster
 ### Setup Server
